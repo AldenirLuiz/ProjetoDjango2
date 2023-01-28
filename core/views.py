@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import ContatoForm
 from django.contrib import messages
+from django.http import HttpResponse
 
 def index(request):
     return render(request, 'index.html')
@@ -31,6 +32,12 @@ def contato(request):
 
 
 def produto(request):
+
     return render(request, 'produto.html')
 
+def service(request):
+    context = {
+        "service": HttpResponse(" tudo ok "),
+    }
+    return context
     

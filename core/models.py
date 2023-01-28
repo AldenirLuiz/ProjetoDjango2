@@ -1,3 +1,8 @@
 from django.db import models
+from stdimage import StdImageField
 
-# Create your models here.
+
+# Signals
+from django.db.models import signals
+from django.template.defaultfilters import slugify
+
