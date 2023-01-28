@@ -32,12 +32,17 @@ def contato(request):
 
 
 def produto(request):
-
-    return render(request, 'produto.html')
-
-def service(request):
     context = {
-        "service": HttpResponse(" tudo ok "),
+        'service': service(request)
     }
-    return context
+    return render(request, 'produto.html', context)
+
+def service(request, query):
+    context = {
+        "services": " <span>Tudo Ok Por Aqui!</span> ",
+    }
+    if str(query) in context.keys():
+        return HttpResponse(context[query])
+    else: 
+        return HttpResponse("Nenhum dado corresponde a solicitacao")
     

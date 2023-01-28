@@ -8,7 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Produto</h1>
-    <span>{% url "service" %}</span>
+    <form acttion="{% url 'service(query)' %}" method="post" class="form" autocomplete="off">
+        {% csrf_token %}
+        <input type="text" name="example">
+        <input type="submit" value="Submit">
+
+        <div>
+            <span> {{ service('service') }} </span>
+        </div>
+    </form>
+{% bootstrap_javascript jquery='full' %}
 </body>
 </html>
