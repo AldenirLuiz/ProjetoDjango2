@@ -33,16 +33,23 @@ def contato(request):
 
 def produto(request):
     context = {
-        'service': service(request)
+        'services': service(3, 3)
     }
     return render(request, 'produto.html', context)
 
-def service(request, query):
-    context = {
-        "services": " <span>Tudo Ok Por Aqui!</span> ",
-    }
-    if str(query) in context.keys():
-        return HttpResponse(context[query])
-    else: 
-        return HttpResponse("Nenhum dado corresponde a solicitacao")
+def service(line, column):
+    result = ""
+    count = 0
+    for x in range(line):
+        result += '<br>'
+        for y in range(column):
+            count+=1
+            result += f"""<button class="btn calc" id="btn-{str(count)}" onclick=sumInt("{str(count)}")>{str(count)}</button>"""
+    return result
+    
+def myCalc(request, arg):
+    myList = list(arg)
+
+    print(myList)
+    return render(request, 'all rights')
     
