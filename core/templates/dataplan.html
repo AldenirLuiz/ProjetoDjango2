@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Data Plan</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- container documento geral -->
+        <div id="container-grid">
+
+            <!-- sub-container lado esquerdo -->
+            <div id="container-e" class="sub-container">
+                
+                <!-- area do card cobranca -->
+                <div class="card" id="card-cob">
+                    <div class="line-tittle" id="line-tittle-cob">
+                        <h2 class="card-tittle" id="text-card-saldo-devedor">COBRANCA</h2>
+                    </div>
+                    <div class="sub-card" id="card-cob-interior">
+                        <!-- coluna lado esquerdo container de textos -->
+                        <div id="column-text-cob" class="text-column">
+                            <div id="line-text-saldo-cob" class="line text-line gray">
+                                <h3 id="text-saldo-cob">Saldo Cobrado</h3>
+                            </div>
+                            <div id="line-text-repas-cob" class="line text-line">
+                                <h3 id="text-repass-cob">Repasse Cobrado</h3>
+                            </div>
+                            <div id="line-text-total-cob" class="line text-line gray">
+                                <h3 id="text-total-cob">Total Cobrado</h3>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de textos -->
+
+                        <!-- coluna lado esquerdo container de valores -->
+                        <div id="column-values-cob" class="value-column">
+                            <div id="line-value-saldo-cob" class="line value-line gray">
+                                <input id="value-saldo-cob"></input>
+                            </div>
+                            <div id="line-value-repas-cob" class="line value-line">
+                                <input id="value-repass-cob"></input>
+                            </div>
+                            <div id="line-value-total-cob" class="line value-line gray">
+                                <input id="value-total-cob"></input>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de valores -->
+                    </div>
+                </div>
+                <!-- fim da area do card cobranca -->
+
+                <!-- area do card saldo devedor -->
+                <div class="card" id="card-sdv">
+                    <div class="line-tittle" id="line-tittle-sdv">
+                        <h2 class="card-tittle" id="text-card-saldo-devedor">SALDO DEVEDOR</h2>
+                    </div>
+
+                    <div class="sub-card" id="card-sdv-interior">
+                        <!-- coluna lado esquerdo container de textos -->
+                        <div id="column-text-sdv" class="text-column">
+                            <div id="line-text-repase-novo" class="line text-line">
+                                <h3 id="text-repasse-novo">Repasse Novo</h3>
+                            </div>
+                            <div id="line-text-repasse-cobrado" class="line text-line">
+                                <h3 id="text-repasse-cobrado">Repasse Cobrado</h3>
+                            </div>
+                        </div>
+                        <!-- coluna lado esquerdo container de textos -->
+
+                        <!-- coluna lado esquerdo container de valores -->
+                        <div id="column-values-sdv" class="value-column">
+                            <div id="line-value-saldo-sdv" class="line value-line">
+                                <input id="value-saldo-sdv"></input>
+                            </div>
+                            <div id="line-value-repas-sdv" class="line value-line">
+                                <input id="value-repass-sdv"></input>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de valores -->
+                    </div>
+                </div>
+
+                <div class="card" id="card-fxs">
+                    <div class="line-tittle" id="line-tittle-fxs">
+                        <h2 class="card-tittle" id="text-card-fichas">FICHAS</h2>
+                    </div>
+
+                    <div class="sub-card" id="card-fxs-interior">
+                        <!-- coluna lado esquerdo container de textos -->
+                        <div id="column-text-fxs" class="text-column">
+                            <div id="line-fichas-novas" class="line text-line">
+                                <h3 id="text-fichas-novas-fxs">Fichas Novas</h3>
+                            </div>
+                            <div id="line-text-fichas-repasse" class="line text-line">
+                                <h3 id="text-fichas-repasse">Fichas Repasse</h3>
+                            </div>
+                            <div id="line-text-fichas-em-branco" class="line text-line">
+                                <h3 id="text-fichas-em-branco">Em Branco</h3>
+                            </div>
+                            <div id="line-text-total-fichas" class="line text-line">
+                                <h3 id="text-total-fichas">Total de Fichas</h3>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de textos -->
+
+                        <!-- coluna lado esquerdo container de valores -->
+                        <div id="column-values-fxs" class="value-column">
+                            <div id="line-value-fichas-novas" class="line value-line">
+                                <input id="value-fichas-novas"></input>
+                            </div>
+                            <div id="line-value-fichas-repasse" class="line value-line">
+                                <input id="value-fichas-repasse"></input>
+                            </div>
+                            <div id="line-value-fichas-em-branco" class="line value-line">
+                                <input id="value-fichas-em-branco"></input>
+                            </div>
+                            <div id="line-value-total-fichas" class="line value-line">
+                                <input id="value-total-fichas"></input>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de valores -->
+                    </div>
+                </div>
+
+                <div class="card" id="card-dsp">
+                    <div class="line-tittle" id="line-tittle-fxs">
+                        <h2 class="card-tittle" id="text-card-fichas">DESPESAS</h2>
+                    </div>
+
+                    <div class="sub-card" id="card-dsp-interior">
+                        <!-- coluna lado esquerdo container de textos -->
+                        <div id="column-text-dsp" class="text-column">
+                            <div id="line-despesas" class="line text-line">
+                                <h3 id="text-despesas">Despesa Rota</h3>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de textos -->
+
+                        <!-- coluna lado esquerdo container de valores -->
+                        <div id="column-values-dsp" class="value-column">
+                            <div id="line-value-despesas" class="line value-line">
+                                <input id="value-despesas"></input>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de valores -->
+                    </div>
+                </div>
+            </div>
+            <!-- fim dosub-container lado direito -->
+
+
+            <!-- sub-container lado esquerdo -->
+            <div id="container-d" class="sub-container">
+                <!-- area do card cobranca -->
+                <div class="card" id="card-cob">
+                    <div class="line-tittle" id="line-tittle-cob">
+                        <h2 class="card-tittle" id="text-card-saldo-devedor">COBRANCA</h2>
+                    </div>
+                    <div class="sub-card" id="card-cob-interior">
+                        <!-- coluna lado esquerdo container de textos -->
+                        <div id="column-text-cob" class="text-column">
+                            <div id="line-text-saldo-cob" class="line text-line">
+                                <h3 id="text-saldo-cob">Saldo Cobrado</h3>
+                            </div>
+                            <div id="line-text-repas-cob" class="line text-line">
+                                <h3 id="text-repass-cob">Repasse Cobrado</h3>
+                            </div>
+                            <div id="line-text-total-cob" class="line text-line">
+                                <h3 id="text-total-cob">Total Cobrado</h3>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de textos -->
+
+                        <!-- coluna lado esquerdo container de valores -->
+                        <div id="column-values-cob" class="value-column">
+                            <div id="line-value-saldo-cob" class="line value-line">
+                                <input id="value-saldo-cob"></input>
+                            </div>
+                            <div id="line-value-repas-cob" class="line value-line">
+                                <input id="value-repass-cob"></input>
+                            </div>
+                            <div id="line-value-total-cob" class="line value-line">
+                                <input id="value-total-cob"></input>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de valores -->
+                    </div>
+                </div>
+                <!-- fim da area do card cobranca -->
+
+                <!-- area do card saldo devedor -->
+                <div class="card" id="card-sdv">
+                    <div class="line-tittle" id="line-tittle-sdv">
+                        <h2 class="card-tittle" id="text-card-saldo-devedor">SALDO DEVEDOR</h2>
+                    </div>
+
+                    <div class="sub-card" id="card-sdv-interior">
+                        <!-- coluna lado esquerdo container de textos -->
+                        <div id="column-text-sdv" class="text-column">
+                            <div id="line-text-repase-novo" class="line text-line">
+                                <h3 id="text-repasse-novo">Repasse Novo</h3>
+                            </div>
+                            <div id="line-text-repasse-cobrado" class="line text-line">
+                                <h3 id="text-repasse-cobrado">Repasse Cobrado</h3>
+                            </div>
+                        </div>
+                        <!-- coluna lado esquerdo container de textos -->
+
+                        <!-- coluna lado esquerdo container de valores -->
+                        <div id="column-values-sdv" class="value-column">
+                            <div id="line-value-saldo-sdv" class="line value-line">
+                                <input id="value-saldo-sdv"></input>
+                            </div>
+                            <div id="line-value-repas-sdv" class="line value-line">
+                                <input id="value-repass-sdv"></input>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de valores -->
+                    </div>
+                </div>
+
+                <div class="card" id="card-fxs">
+                    <div class="line-tittle" id="line-tittle-fxs">
+                        <h2 class="card-tittle" id="text-card-fichas">FICHAS</h2>
+                    </div>
+
+                    <div class="sub-card" id="card-fxs-interior">
+                        <!-- coluna lado esquerdo container de textos -->
+                        <div id="column-text-fxs" class="text-column">
+                            <div id="line-fichas-novas" class="line text-line">
+                                <h3 id="text-fichas-novas-fxs">Fichas Novas</h3>
+                            </div>
+                            <div id="line-text-fichas-repasse" class="line text-line">
+                                <h3 id="text-fichas-repasse">Fichas Repasse</h3>
+                            </div>
+                            <div id="line-text-fichas-em-branco" class="line text-line">
+                                <h3 id="text-fichas-em-branco">Em Branco</h3>
+                            </div>
+                            <div id="line-text-total-fichas" class="line text-line">
+                                <h3 id="text-total-fichas">Total de Fichas</h3>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de textos -->
+
+                        <!-- coluna lado esquerdo container de valores -->
+                        <div id="column-values-fxs" class="value-column">
+                            <div id="line-value-fichas-novas" class="line value-line">
+                                <input id="value-fichas-novas"></input>
+                            </div>
+                            <div id="line-value-fichas-repasse" class="line value-line">
+                                <input id="value-fichas-repasse"></input>
+                            </div>
+                            <div id="line-value-fichas-em-branco" class="line value-line">
+                                <input id="value-fichas-em-branco"></input>
+                            </div>
+                            <div id="line-value-total-fichas" class="line value-line">
+                                <input id="value-total-fichas"></input>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de valores -->
+                    </div>
+                </div>
+
+                <div class="card" id="card-dsp">
+                    <div class="line-tittle" id="line-tittle-fxs">
+                        <h2 class="card-tittle" id="text-card-fichas">FICHAS</h2>
+                    </div>
+
+                    <div class="sub-card" id="card-dsp-interior">
+                        <!-- coluna lado esquerdo container de textos -->
+                        <div id="column-text-dsp" class="text-column">
+                            <div id="line-despesas" class="line text-line">
+                                <h3 id="text-despesas">Despesa Rota</h3>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de textos -->
+
+                        <!-- coluna lado esquerdo container de valores -->
+                        <div id="column-values-dsp" class="value-column">
+                            <div id="line-value-despesas" class="line value-line">
+                                <input id="value-despesas"></input>
+                            </div>
+                        </div>
+                        <!-- fim da coluna lado esquerdo container de valores -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="" async defer></script>
+    </body>
+</html>

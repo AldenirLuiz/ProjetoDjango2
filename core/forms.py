@@ -1,7 +1,7 @@
 from django import forms
 from django.core.mail.message import EmailMessage
 
-from .models import Produto
+from .models import Produto, PlanilhaCob
 
 class ContatoForm(forms.Form):
     nome = forms.CharField(label='Nome')
@@ -32,3 +32,9 @@ class ProdutoModelForm(forms.ModelForm):
     class Meta:
         model = Produto
         fields = ['nome', 'preco', 'estoque', 'imagem']
+
+
+class PlanilhaModelForm(forms.ModelForm):
+    class Meta:
+        model = PlanilhaCob
+        fields = ['nome', 'data', 'preco', 'estoque']

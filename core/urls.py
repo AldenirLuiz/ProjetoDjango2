@@ -8,5 +8,6 @@ urlpatterns = [
     path('contato', views.contato, name='contato'),
     path('produto', views.produto, name='produto'),
     path('service', views.service, name='service'),
-    path('myCalc/<str:arg>', views.myCalc, name='myCalc')
+    path('charts', views.charts, name='charts'),
+    path('estoque', views.estoque, name='estoque')
 ]

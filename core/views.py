@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import ContatoForm, ProdutoModelForm
+from .forms import ContatoForm, ProdutoModelForm, PlanilhaModelForm
 from django.contrib import messages
 
 
@@ -57,6 +57,31 @@ def produto(request):
     }
     return render(request, 'produto.html', context)
 
+def estoque(request):
+    if str(request.method) == "POST":
+        form = PlanilhaModelForm(request.POST)
+        if form.is_valid():
+            prod = form.save(commit=False)
+            print(
+                f'''
+                    Nome: {prod.nome}
+                    Data da Rota: {prod.data}
+                    Valor Cobrado: {prod.preco}
+                    Mercadoria: {prod.estoque}
+                '''
+            )
+            
+            messages.success(request, 'Produto Salvo com Sucesso.')
+            form = PlanilhaModelForm()
+        else:
+            messages.error(request,'Erro ao Salvar Produto.')
+    else:
+        form = PlanilhaModelForm()
+
+    context = {
+        'form': form
+    }
+    return render(request, 'estoque.html', context)
 
 
 def service(line, column):
@@ -69,9 +94,9 @@ def service(line, column):
             result += f"""<button class="btn calc" id="btn-{str(count)}" onclick=sumInt("{str(count)}")>{str(count)}</button>"""
     return result
     
-def myCalc(request, arg):
-    myList = list(arg)
+def charts(request):
+    
+    return render(request, 'charts.html')
 
-    print(myList)
-    return render(request, 'all rights')
+
     

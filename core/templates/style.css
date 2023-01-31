@@ -1,0 +1,82 @@
+:root {
+    --orintation-mode: column;
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+input {
+    margin: auto;
+}
+
+#container-grid {
+    display: flex;
+    flex-direction: var(--orintation-mode);
+    align-items: center;
+    margin: 4px;
+}
+
+.sub-container {
+    
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.sub-card {
+    display: flex;
+    flex-direction: row;
+    border: 0px;
+    padding: 0px;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+.line {
+    display: flex;
+    border-bottom: 1px solid black;
+    margin: auto;
+    padding: 4px;
+    height: 30px;
+    width: 180px;
+    justify-content: center;
+    text-align: center;
+}
+
+.value-column {
+    margin: auto;
+    padding: 0px;
+}
+
+.value-line {
+    margin: auto;
+}
+
+.text-column {
+    border: 1px solid black;
+}
+.value-column {
+    border: 1px solid black;
+}
+
+.gray {
+    background-color: rgba(0, 0, 0, 0.2);
+}
